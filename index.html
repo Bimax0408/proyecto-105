@@ -1,0 +1,62 @@
+ 
+<html>
+  <head>
+    <title>Reconocimiento de imagen</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Are+You+Serious&family=Comfortaa:wght@500&family=DynaPuff&family=Fredoka+One&family=Luckiest+Guy&family=Montserrat:wght@800&family=Orbitron&display=swap" rel="stylesheet">
+
+   <link rel="stylesheet" href="style.css">
+  
+  </head>
+
+  <body>
+  <div class="container">
+    
+    <center>
+
+      <br><br>
+
+      <p style="font-size: 40px;" class="hola">El modelo está entrenado para identificar a las siguientes personas: </p>
+
+      <div class="name_of_object">
+        <p style="font-size: 22px;">Israel(papá)</p>
+        <br> <hr>
+        <p style="font-size: 22px;">Monica(mamá)</p>
+        <br> <hr>
+        <p style="font-size: 22px;">Franco(hermano)</p>
+        <br> <hr>
+        <p style="font-size: 22px;">Amanda(hermana)</p>
+        <br> <hr>
+      </div>
+
+      <label style="font-size:40px;" class="holaa">Vista de la cámara: </label>
+
+      <div id="camara"></div>
+
+      <br><br>
+      <button onclick="take_snapshot()" class="btn btn-success">Tomar Foto</button>
+      <br><br>
+      <div id="resultado"></div>
+      <br><br>
+      <button onclick="check()" class="btn btn-warning">Identificar imagen</button>
+      <br><br>
+
+      <p style="font-size: 22px;" class="holaaa">Objeto:  <span id="objeto_ nombre"></span></p>
+      <p style="font-size: 22px;" class="holaaa">Precisión:  <span id="objeto_presicion"></span></p>
+    </center>
+
+  </div>
+<script src="main.js"></script>
+
+  </body>
+</html>
+
+ 
